@@ -2,13 +2,13 @@
     <head>
         <title>★★★★Cooltia</title>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>    
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <script src="./js/jquery.min.js"></script>    
+        <script src="./js/ScrollMagic.min.js"></script>
+        <script src="./js/debug.addIndicators.min.js"></script>
+        <script src="./js/TweenMax.min.js"></script>
+        <script src="./js/animation.gsap.js"></script>
         <script src="./js/wow.min.js"></script>
+        <link rel="stylesheet" href="./css/animate.min.css" />
 
         <style>
             html, body {margin: 0px; padding: 0px; height:100%; scroll-behavior: smooth; -ms-overflow-style: none; /* 인터넷 익스플로러 */ scrollbar-width: none; /* 파이어폭스 */ }
@@ -66,7 +66,7 @@
             
         </div>
         <div class="mg-b-6" style="background-color:#ff4600; position:relative; text-align: center;">
-            <img class="wow animate__animated animate__fadeInUp" data-wow-duration="1.5s"  src="./images/second-typo.png" style="width:870px; height:auto; margin: 185px 0 185px 0; ">
+            <img class="wow animate__animated animate__fadeInUp" data-wow-offset="10" data-wow-duration="0.8s"  src="./images/second-typo.png" style="width:870px; height:auto; margin: 185px 0 185px 0; ">
         </div>
         <div class="mg-b-6">
             <img src="./images/brand-story.png" style="width: 100%; height:auto;">
@@ -83,10 +83,10 @@
             </div>
             <div style="position:absolute; bottom: 605px; width:100%; text-align: center;">
                 <div style="margin-bottom:111.5px;">
-                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" src="./images/third-typo-title.png" style="width: 795px; height:auto;">
+                    <img class="wow animate__animated animate__fadeInUp" data-wow-offset="10" data-wow-duration="0.8s" src="./images/third-typo-title.png" style="width: 795px; height:auto;">
                 </div>
                 <div>
-                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.3s" src="./images/third-typo-sub.png" style="width: 795px; height:auto;">
+                    <img class="wow animate__animated animate__fadeInUp" data-wow-offset="10" data-wow-duration="0.8s" data-wow-delay="0.3s" src="./images/third-typo-sub.png" style="width: 795px; height:auto;">
                 </div>
             </div>
         </div>
@@ -95,13 +95,13 @@
         </div>
         <div class="mg-b-6" style="position: relative;">
             <div style="position:absolute; top: 250px; width:100%; text-align: center;">
-                <img class="wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" src="./images/visual_motif.png" style="width: 744px; height:auto;">
+                <img class="wow animate__animated animate__fadeInUp" data-wow-offset="10" data-wow-duration="0.8s" src="./images/visual_motif.png" style="width: 744px; height:auto;">
             </div>
             <div id="vegas_section" style="position:absolute; z-index: 2; top: 56%; left:50%; width:100%; text-align: center; transform: translate(-50%, -56%);">
-                <img id="vegas_sign" src="./images/sign_off.png" style="width: 1600px; height:950px;">
+                <img id="vegas_sign" src="./images/sign_off.png" style="width: 1600px; height:auto;">
             </div>
-            <div class="wow animate__animated animate__fadeIn" data-wow-duration="1.5s"  style="position:absolute;  z-index: 1; top: 56%; left:50%; width:100%; text-align: center; transform: translate(-50%, -56%);">
-                <img id="vegas_sign_off" src="./images/sign_on.png" style="width: 1600px; height:950px;">
+            <div class="wow animate__animated animate__fadeIn" data-wow-offset="10" data-wow-duration="0.8s"  style="position:absolute;  z-index: 1; top: 56%; left:50%; width:100%; text-align: center; transform: translate(-50%, -56%);">
+                <img id="vegas_sign_off" src="./images/sign_on.png" style="width: 1600px; height:auto;">
             </div>
             <img src="./images/vegas.png" style="width: 100%; height:auto;">
         </div>
@@ -144,10 +144,12 @@
         </div>
         <!-- scroll magic -->
 
+        <section class="digit_trigger"></section>
         <div class="mg-b-6" style="position: relative;">
             <img src="./images/brand-naming.png" style="width: 100%; height:auto;">
-            <div style="position: absolute; top: 62.5%; left:50%; width:100%; text-align: center; transform: translate(-50%, -62.5%);">
-                <img class="wow animate__animated animate__zoomIn" data-wow-duration="1.5s" src="./images/cool-typo.png" style="width: 1813px; height:auto;">
+            <div style="position: absolute; top: 62.5%; left:50%; width:1813px; text-align: center; transform: translate(-50%, -62.5%);">
+                <!-- <img class="wow animate__animated animate__zoomIn digit" data-wow-duration="0.8s" src="./images/cool-typo.png" style="width: 100%; height:auto; transform: scale(0.01);"> -->
+                <img class="digit" src="./images/cool-typo.png" style="width: 100%; height:auto; transform: scale(0.01);">
             </div>
         </div>
         <div class="mg-b-6">
@@ -184,7 +186,7 @@
                     <source src="./videos/Symbol_Motion.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="wow animate__animated animate__fadeInUp" data-wow-duration="1.5s"  style="position:absolute;  left:370px; bottom: 268px;">
+            <div class="wow animate__animated animate__fadeInUp" data-wow-offset="5" data-wow-duration="0.8s"  style="position:absolute;  left:370px; bottom: 268px;">
                 <div style="margin-bottom:80px;">
                     <img src="./images/book_img1_title.png" style="width: 535px; height:auto;">
                 </div>
@@ -270,7 +272,7 @@
         <div class="mg-b-6" style="position: relative;">
             <img src="./images/book_img8.png" style="width: 100%; height:auto;">
             <div style="position: absolute; top: 43%; left:50%; width:100%; text-align: center; transform: translate(-50%, -43%);">
-                <img class="wow animate__animated animate__fadeInUp" data-wow-duration="1s" src="./images/book_img8_typo.png"
+                <img class="wow animate__animated animate__fadeInUp" data-wow-offset="5"  data-wow-duration="0.8s" src="./images/book_img8_typo.png"
                     style="width: 510px; height:auto;">
             </div>
         </div>
@@ -296,7 +298,7 @@
             roll++;
             if(roll>8) roll= 2;
             document.getElementById('img_slide').src = "./images/brand-slide_0"+roll+".png";
-        }, 2000);
+        }, 1000);
 
         $(window).scroll(function () {
             
@@ -339,6 +341,24 @@
                 //.addIndicators({ name: "pinContainer" })
                 .addTo(controller);
 
+
+                
+            var objThinkCool = new TimelineMax();
+            objThinkCool.to('.digit', 2.0, {
+                scale: 1,
+                ease: [0, Power4.easeIn],
+            })
+
+
+            new ScrollMagic.Scene({
+                triggerElement: ".digit_trigger",
+                triggerHook: "onLeave", //default
+                duration: 500,
+                //offset: 50, // move trigger to center of element
+            })
+            .setTween(objThinkCool)
+            // .addIndicators({ name: "digit_trigger (duration:500)" }) // add indicators (requires plugin)
+            .addTo(controller);
 
 
 
