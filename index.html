@@ -73,13 +73,13 @@
         <section id="concepts"></section>
         <div class="mg-b-6" style="position: relative; text-align: center;">
             <img src="./images/concept-bg.png" style="width: 100%; height:auto;">
-            <img id="concepts_typo" src="./images/concept-typo.png" style="position:absolute; top: 15%; left: 50%; transform: translate(-50%, -15%);min-width: 1816px; width:100%; height:auto; display: inline-block;">
+            <img id="concepts_typo" src="./images/concept-typo.png" style="position:absolute; top: 60%; left: 50%; transform: translate(-50%, 0%);min-width: 1816px; width:100%; height:auto; display: inline-block;">
         </div>
         <div class="mg-b-6" style="position: relative;">
             <img src="./images/brand-philosophy.png" style="width: 100%; height:auto;">
             <div style="position:absolute; top: 37%; min-width: 1920px; width:100%; left: 50%;  transform: translate(-50%, -37%);">
                 <video style="min-width: 1920px; width:100%; height:auto;" autoplay muted loop>
-                    <source src="./videos/Brand Motion_Orange.mp4" type="video/mp4">
+                    <source label="fullHD" src="./videos/Brand Motion_Orange.mp4" type="video/mp4">
                 </video>
             </div>
             <div style="position:absolute; bottom: 605px; width:100%; text-align: center;">
@@ -435,15 +435,15 @@
             
             new ScrollMagic.Scene({
                 triggerElement: "#concepts",
-                triggerHook: 0.2,
-                duration: 2000,
+                triggerHook: 0.3,
+                duration: 2500,
                 //offset: 50, // move trigger to center of element
                 //reverse: true // only do once
 
             })
-            .setTween('#concepts_typo', { y: "-60%", ease: Linear.easeNone })
+            .setTween('#concepts_typo', { y: "-300%", ease: Linear.easeNone })
             //.setPin("#parallax_container", { pushFollowers: true })
-            .addIndicators({ name: "concepts_typo" }) // add indicators (requires plugin)
+            //.addIndicators({ name: "concepts_typo" }) // add indicators (requires plugin)
             .addTo(controller);
         }())
     </script>
