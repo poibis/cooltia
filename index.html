@@ -18,6 +18,7 @@
                 display: none;
             } */
 
+            video { object-fit: cover; }
             /* scroll magic */
             #pinContainer {
                 width: 100%;
@@ -69,14 +70,16 @@
         <div class="mg-b-6">
             <img src="./images/brand-story.png" style="width: 100%; height:auto;">
         </div>
-        <div class="mg-b-6">
+        <section id="concepts"></section>
+        <div class="mg-b-6" style="position: relative; text-align: center;">
             <img src="./images/concept-bg.png" style="width: 100%; height:auto;">
+            <img id="concepts_typo" src="./images/concept-typo.png" style="position:absolute; top: 15%; left: 50%; transform: translate(-50%, -15%);min-width: 1816px; width:100%; height:auto; display: inline-block;">
         </div>
         <div class="mg-b-6" style="position: relative;">
             <img src="./images/brand-philosophy.png" style="width: 100%; height:auto;">
             <div style="position:absolute; top: 37%; min-width: 1920px; width:100%; left: 50%;  transform: translate(-50%, -37%);">
                 <video style="min-width: 1920px; width:100%; height:auto;" autoplay muted loop>
-                    <source src="./videos/Brand_Motion.webm" type="video/mp4">
+                    <source src="./videos/Brand Motion_Orange.mp4" type="video/mp4">
                 </video>
             </div>
             <div style="position:absolute; bottom: 605px; width:100%; text-align: center;">
@@ -84,7 +87,11 @@
                     <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" src="./images/third-typo-title.png" style="width: 795px; height:auto;">
                 </div>
                 <div>
-                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s" src="./images/third-typo-sub.png" style="width: 795px; height:auto;">
+                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" data-wow-offset="200" src="./images/third-typo-sub.png" style="width: 795px; height:auto;">
+                </div>
+                <div style="margin-top:80px;">
+                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" data-wow-offset="200"
+                        src="./images/fourth-typo-sub.png" style="width: 795px; height:auto;">
                 </div>
             </div>
         </div>
@@ -107,7 +114,7 @@
         <!-- scroll magic -->
         <div id="pinContainer">
             <div id="pannel_wrap" style="position:relative; top:0; left:0; height:330px; ">
-                <div class="panel_title" style="width: 1920px; height: 330px; background-color: #000000; display:flex; position: absolute; top:0px; text-align: center;">
+                <div class="panel_title" style="width: 100%; height: 330px; background-color: #000000; display:flex; position: absolute; top:0px; text-align: center;">
                     <div style="padding: 86px 0 73px 0 ; width:100%">
                         <img style="position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);" class="panel_img" src="./images/first-parrel_typo.png">
                         <img style="position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); opacity: 0;" class="panel_img2" src="./images/second-parrel_typo.png">
@@ -174,7 +181,7 @@
 
         <!-- <div style="position:relative; min-width:1920px; width:100%; height:228vh; overflow:hidden; background-color: #000000; text-align: center; margin:auto;">
         </div> -->
-        <div class="mg-b-6" style="position:relative; z-index: 3; width: 100%; height: 228vh; overflow:hidden; text-align: center; margin:auto;">
+        <div class="mg-b-6" style="position:relative; z-index: 3; width: 100%; height: 2300px; overflow:hidden; text-align: center; margin:auto;">
             <img id="parallax_image" src="./images/scroll-image.png" style="position:absolute; top:0%; left: 50%; transform: translate(-50%, 0%); min-width: 1920px; width: 1920px; height:auto; margin-bottom:100px; ">
         </div>
 
@@ -186,9 +193,9 @@
 
         <div class="mg-b-6" style="position: relative;">
             <img src="./images/book_img1.png" style="width: 100%; height:auto;">
-            <div style="position: absolute; top: 43%; left:50%; width:100%; text-align: center; transform: translate(-50%, -43%);">
-                <video style="width:950px; height:670px;" autoplay muted loop>
-                    <source src="./videos/Symbol_Motion.mp4" type="video/mp4">
+            <div style="position: absolute; top: 44%; left:50%; min-width:920px; width:100%; text-align: center; transform: translate(-50%, -44%);">
+                <video style="min-width:920px; width:49vw; height:auto; object-fit: cover;" autoplay muted loop>
+                    <source src="./videos/Main_Motion.mp4" type="video/mp4">
                 </video>
             </div>
             <div class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s"  style="position:absolute;  left:370px; bottom: 268px;">
@@ -203,8 +210,11 @@
         <div class="mg-b-6">
             <img src="./images/book_img2.png" style="width: 100%; height:auto;">
         </div>
-        <div class="mg-b-6">
+        <div class="mg-b-6" style="position:relative;">
             <img src="./images/book_img3.png" style="width: 100%; height:auto;">
+            <div style="position: absolute; top:24%; left:43%; transform: translate(-43%, -24%); min-width:267px; height:auto; width: 13vw;">
+                <img src="./images/cool_gif.gif" style="width: -webkit-fill-available;">
+            </div>
         </div>
         <div class="mg-b-6">
             <img src="./images/book_img4.png" style="width: 100%; height:auto;">
@@ -253,8 +263,11 @@
                 </div>
             </div>
         </div>
-        <div class="mg-b-6">
+        <div class="mg-b-6" style="position:relative;">
             <img src="./images/book_img5.png" style="width: 100%; height:auto;">
+            <div style="position: absolute; top: 82.4%; left:50%;text-align: center; transform: translate(-50%, -82.4%);">
+                <img class="wow animate__animated animate__fadeInUp"  data-wow-duration="0.8s" data-wow-offset="1" src="./images/book_img5_phone.png" style="width: 356px; height:auto;">
+            </div>
         </div>
         <div class="mg-b-6">
             <img src="./images/book_img6.png" style="width: 100%; height:auto;">
@@ -418,6 +431,20 @@
             //.addIndicators({ name: "parallax_section_close" }) // add indicators (requires plugin)
             .addTo(controller);
             
+
+            
+            new ScrollMagic.Scene({
+                triggerElement: "#concepts",
+                triggerHook: 0.1,
+                duration: 1500,
+                //offset: 50, // move trigger to center of element
+                //reverse: true // only do once
+
+            })
+            .setTween('#concepts_typo', { y: "-60%", ease: Linear.easeNone })
+            //.setPin("#parallax_container", { pushFollowers: true })
+            .addIndicators({ name: "concepts_typo" }) // add indicators (requires plugin)
+            .addTo(controller);
         }())
     </script>
 
