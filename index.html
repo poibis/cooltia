@@ -23,8 +23,6 @@
                 width: 100%;
                 height: 100%;
                 overflow: hidden;
-                -webkit-perspective: 1000;
-                perspective: 1000;
             }
 
             #slideContainer {
@@ -66,7 +64,7 @@
             
         </div>
         <div class="mg-b-6" style="background-color:#ff4600; position:relative; text-align: center;">
-            <img class="wow animate__animated animate__fadeInUp" data-wow-offset="10" data-wow-duration="0.8s"  src="./images/second-typo.png" style="width:870px; height:auto; margin: 185px 0 185px 0; ">
+            <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s"  src="./images/second-typo.png" style="width:870px; height:auto; margin: 185px 0 185px 0; ">
         </div>
         <div class="mg-b-6">
             <img src="./images/brand-story.png" style="width: 100%; height:auto;">
@@ -83,10 +81,10 @@
             </div>
             <div style="position:absolute; bottom: 605px; width:100%; text-align: center;">
                 <div style="margin-bottom:111.5px;">
-                    <img class="wow animate__animated animate__fadeInUp" data-wow-offset="10" data-wow-duration="0.8s" src="./images/third-typo-title.png" style="width: 795px; height:auto;">
+                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" src="./images/third-typo-title.png" style="width: 795px; height:auto;">
                 </div>
                 <div>
-                    <img class="wow animate__animated animate__fadeInUp" data-wow-offset="10" data-wow-duration="0.8s" data-wow-delay="0.3s" src="./images/third-typo-sub.png" style="width: 795px; height:auto;">
+                    <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.3s" src="./images/third-typo-sub.png" style="width: 795px; height:auto;">
                 </div>
             </div>
         </div>
@@ -95,12 +93,12 @@
         </div>
         <div class="mg-b-6" style="position: relative;">
             <div style="position:absolute; top: 250px; width:100%; text-align: center;">
-                <img class="wow animate__animated animate__fadeInUp" data-wow-offset="10" data-wow-duration="0.8s" src="./images/visual_motif.png" style="width: 744px; height:auto;">
+                <img class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s" src="./images/visual_motif.png" style="width: 744px; height:auto;">
             </div>
             <div id="vegas_section" style="position:absolute; z-index: 2; top: 56%; left:50%; width:100%; text-align: center; transform: translate(-50%, -56%);">
                 <img id="vegas_sign" src="./images/sign_off.png" style="width: 1600px; height:auto;">
             </div>
-            <div class="wow animate__animated animate__fadeIn" data-wow-offset="10" data-wow-duration="0.8s"  style="position:absolute;  z-index: 1; top: 56%; left:50%; width:100%; text-align: center; transform: translate(-50%, -56%);">
+            <div class="wow animate__animated animate__fadeIn"  data-wow-offset="8" data-wow-duration="0.8s"  style="position:absolute;  z-index: 1; top: 56%; left:50%; width:100%; text-align: center; transform: translate(-50%, -56%);">
                 <img id="vegas_sign_off" src="./images/sign_on.png" style="width: 1600px; height:auto;">
             </div>
             <img src="./images/vegas.png" style="width: 100%; height:auto;">
@@ -108,10 +106,12 @@
 
         <!-- scroll magic -->
         <div id="pinContainer">
-            <div id="pannel_wrap" style="position:relative; top:0; left:0; height:380px; ">
-                <div class="panel_title" style="width: 1920px; height: 380px; background-color: #000000; display:flex; position: absolute; top:0px; text-align: center;">
-                    <div style="padding: 136px 0 73px 0 ; width:100%">
-                        <img class="panel_img" src="./images/first-parrel_typo.png">
+            <div id="pannel_wrap" style="position:relative; top:0; left:0; height:330px; ">
+                <div class="panel_title" style="width: 1920px; height: 330px; background-color: #000000; display:flex; position: absolute; top:0px; text-align: center;">
+                    <div style="padding: 86px 0 73px 0 ; width:100%">
+                        <img style="position:absolute; top:50%; left:50%; transform: translate(-50%, -50%);" class="panel_img" src="./images/first-parrel_typo.png">
+                        <img style="position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); opacity: 0;" class="panel_img2" src="./images/second-parrel_typo.png">
+                        <img style="position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); opacity: 0;" class="panel_img3" src="./images/third-parrel_typo.png">
                     </div>
                 </div>
             </div>
@@ -160,25 +160,30 @@
                 <source src="./videos/Symbol_Motion.mp4" type="video/mp4">
             </video>
         </div>
-        <div class="mg-b-6">
+        <div class="mg-b-6" style="position:relative; z-index: 3;">
             <img src="./images/typography.png" style="width: 100%; height:auto;">
         </div>
-        <div class="mg-b-6">
+        <section id="parallax_section"></section>
+        <div class="mg-b-6" style="position:relative; z-index: 3;">
             <img src="./images/brand-color.png" style="width: 100%; height:auto;">
         </div>
+        
+        <div id="parallax_container" style="position:fixed; visibility: hidden; opacity: 0; z-index:1; min-width:1920px; width:100%; height:100%; overflow:hidden; background-color: #000000; text-align: center; margin:auto; top:0; left:0; ">
+            <img id="back_title" src="./images/scroll-title.png" style="position:absolute; top: 50%; left:50%; transform: translate(-50%, -50%); z-index: 1;  width:650px; height:auto; display: inline-block; vertical-align: middle;">
+        </div>
 
-        <section id="parallax_section"></section>
-        <div id="parallax_container" style="min-width:1920px; width:100%; height:100%; overflow:hidden;-webkit-perspective: 1000; perspective: 1000; background-color: #000000; text-align: center; margin:auto;">
-            <img src="./images/scroll-title.png"
-            style="position: absolute; z-index: 1; top: 50%; left:50%; transform: translate(-50%, -50%); width:650px; height:auto; display: inline-block; vertical-align: middle;">
-            <img id="parallax_image" src="./images/scroll-image.png"
-            style="position:absolute; z-index: 2; top:0%; left: 50%; transform: translate(-50%, 0%); min-width: 1920px; width: 1920px; height:auto; margin-bottom:100px; ">
+        <!-- <div style="position:relative; min-width:1920px; width:100%; height:228vh; overflow:hidden; background-color: #000000; text-align: center; margin:auto;">
+        </div> -->
+        <div class="mg-b-6" style="position:relative; z-index: 3; width: 100%; height: 228vh; overflow:hidden; text-align: center; margin:auto;">
+            <img id="parallax_image" src="./images/scroll-image.png" style="position:absolute; top:0%; left: 50%; transform: translate(-50%, 0%); min-width: 1920px; width: 1920px; height:auto; margin-bottom:100px; ">
         </div>
 
 
-        <div class="mg-b-6">
+        <section id="parallax_section_close"></section>
+        <div class="mg-b-6" style="position:relative; z-index: 3;">
             <img src="./images/footer.png" style="width: 100%; height:auto;">
         </div>
+
         <div class="mg-b-6" style="position: relative;">
             <img src="./images/book_img1.png" style="width: 100%; height:auto;">
             <div style="position: absolute; top: 43%; left:50%; width:100%; text-align: center; transform: translate(-50%, -43%);">
@@ -186,7 +191,7 @@
                     <source src="./videos/Symbol_Motion.mp4" type="video/mp4">
                 </video>
             </div>
-            <div class="wow animate__animated animate__fadeInUp" data-wow-offset="5" data-wow-duration="0.8s"  style="position:absolute;  left:370px; bottom: 268px;">
+            <div class="wow animate__animated animate__fadeInUp" data-wow-duration="0.8s"  style="position:absolute;  left:370px; bottom: 268px;">
                 <div style="margin-bottom:80px;">
                     <img src="./images/book_img1_title.png" style="width: 535px; height:auto;">
                 </div>
@@ -272,7 +277,7 @@
         <div class="mg-b-6" style="position: relative;">
             <img src="./images/book_img8.png" style="width: 100%; height:auto;">
             <div style="position: absolute; top: 43%; left:50%; width:100%; text-align: center; transform: translate(-50%, -43%);">
-                <img class="wow animate__animated animate__fadeInUp" data-wow-offset="5"  data-wow-duration="0.8s" src="./images/book_img8_typo.png"
+                <img class="wow animate__animated animate__fadeInUp"  data-wow-duration="0.8s" src="./images/book_img8_typo.png"
                     style="width: 510px; height:auto;">
             </div>
         </div>
@@ -288,7 +293,7 @@
             {
                 boxClass: 'wow',      // default
                 animateClass: 'animated', // default
-                offset: 300,
+                offset: 400,
                 mobile: true,
                 live: true
             }
@@ -313,23 +318,40 @@
 
         (function () {
             var controller = new ScrollMagic.Controller();
-
+            
             var wipeAnimation = new TimelineMax()
                 // animate to first
-                .to("#slideContainer", 1, { x: "-20%" })
-                .to("#slideContainer, .panel_title", 1, { backgroundColor: "#00006e" })
+                .to("#slideContainer", 5, { ease: Power0.easeNone, x: "-20%" })
+                .to("#slideContainer, .panel_title", 0.5, { ease: Power0.easeNone, backgroundColor: "#00006e" }, "-=0.5")
+                // .to('.panel_img', 0.5, { ease: Power0.easeNone, attr: { src: "./images/second-parrel_typo.png" } }, "-=0.5")
+                .to('.panel_img', 2, { ease: Power0.easeNone, opacity: 0, }, "-=2")
+                .to('.panel_img2', 2, { ease: Power0.easeNone, opacity: 1, }, "-=2")
+
+                // animate to second
+                .to("#slideContainer", 5, { ease: Power0.easeNone, x: "-40%" })
+
+                // animate to third
+                .to("#slideContainer", 5, { ease: Power0.easeNone, x: "-60%" })
+                .to("#slideContainer, .panel_title", 0.5, { ease: Power0.easeNone, backgroundColor: "#dcff00" }, "-=0.5")
+                // .to('.panel_img', 0.5, { ease: Power0.easeNone, attr: { src: "./images/third-parrel_typo.png" } }, "-=0.5")
+                .to('.panel_img2', 2, { ease: Power0.easeNone, opacity: 0, }, "-=2")
+                .to('.panel_img3', 2, { ease: Power0.easeNone, opacity: 1, }, "-=2")
+                // animate to fouth
+                .to("#slideContainer", 5, { ease: Power0.easeNone, x: "-80%" })
+                /* .to("#slideContainer", 10, { ease: Power0.easeNone, x: "-20%" })
+                .to("#slideContainer, .panel_title", 0.1, { ease: Power0.easeNone, backgroundColor: "#00006e" })
                 .to('.panel_img', 1, { attr: { src: "./images/second-parrel_typo.png" } } , "-=1")
                 
                 // animate to second
-                .to("#slideContainer", 1, { x: "-40%" })
+                .to("#slideContainer", 10, { ease: Power0.easeNone, x: "-40%" })
 
                 // animate to third
-                .to("#slideContainer", 1, { x: "-60%" })
-                .to("#slideContainer, .panel_title", 1, { backgroundColor: "#dcff00" })
+                .to("#slideContainer", 10, { ease: Power0.easeNone, x: "-60%" })
+                .to("#slideContainer, .panel_title", 1, { ease: Power0.easeNone, backgroundColor: "#dcff00" })
                 .to('.panel_img', 1, { attr: { src: "./images/third-parrel_typo.png" } }, "-=1")
                 
                  // animate to fouth
-                .to("#slideContainer", 1, { x: "-80%" })
+                .to("#slideContainer", 10, { ease: Power0.easeNone, x: "-80%" }) */
 
             var scene = new ScrollMagic.Scene({
                 triggerElement: "#pinContainer",
@@ -361,19 +383,41 @@
             .addTo(controller);
 
 
+            var obj_open = new TimelineMax()
+                .to( "#parallax_container", 0.1, { ease: Power0.easeNone, opacity:1, visibility:"visible" })
+
 
             new ScrollMagic.Scene({
                 triggerElement: "#parallax_section",
                 triggerHook: "onLeave",
-                duration: 2000,
+                duration: 300,
                 //offset: 50, // move trigger to center of element
                 //reverse: true // only do once
 
             })
-            .setTween("#parallax_image", { y: "-60%", ease: Linear.easeNone })
-            .setPin("#parallax_container", { pushFollowers: true })
+            .setTween(obj_open)
+            //.setTween('#parallax_image', { y: "-60%", ease: Linear.easeNone })
+            //.setPin("#parallax_container", { pushFollowers: true })
             //.addIndicators({name: "parallax_section"}) // add indicators (requires plugin)
             .addTo(controller);
+
+            var obj_close = new TimelineMax()
+                .to("#parallax_container", 0.1, { ease: Power0.easeNone, opacity: 0, visibility:"hidden" })
+
+            new ScrollMagic.Scene({
+                triggerElement: "#parallax_section_close",
+                triggerHook: "onLeave",
+                duration: 300,
+                //offset: 50, // move trigger to center of element
+                //reverse: true // only do once
+
+            })
+            .setTween(obj_close)
+            //.setTween('#parallax_image', { y: "-60%", ease: Linear.easeNone })
+            //.setPin("#parallax_container", { pushFollowers: true })
+            //.addIndicators({ name: "parallax_section_close" }) // add indicators (requires plugin)
+            .addTo(controller);
+            
         }())
     </script>
 
