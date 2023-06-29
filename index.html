@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <head>
-        <title>★★★★Cooltia</title>
+        <title>Cooltia</title>
 
         <script src="./js/jquery.min.js"></script>    
         <script src="./js/ScrollMagic.min.js"></script>
@@ -188,7 +188,17 @@
 
         <section id="parallax_section_close"></section>
         <div class="mg-b-6" style="position:relative; z-index: 3;">
-            <img src="./images/footer.png" style="width: 100%; height:auto;">
+            <img class="mg-b-6" src="./images/footerimg_1.png" style="width: 100%; height:auto;"><br>
+            <img class="mg-b-6" src="./images/footerimg_2.png" style="width: 100%; height:auto;"><br>
+            <img class="mg-b-6" src="./images/footerimg_3.png" style="width: 100%; height:auto;"><br>
+            <img class="mg-b-6" src="./images/footerimg_4.png" style="width: 100%; height:auto;"><br>
+            <img class="mg-b-6" src="./images/footerimg_5.png" style="width: 100%; height:auto;"><br>
+
+            <video class="mg-b-6" style="min-width:920px; width:100%; height:auto; object-fit: cover;" autoplay muted loop>
+                <source src="./videos/Mockup_BD.mp4" type="video/mp4">
+            </video><br>
+            <img src="./images/footerimg_6.png" style="width: 100%; height:auto;">
+
         </div>
 
         <div class="mg-b-6" style="position: relative;">
@@ -441,7 +451,7 @@
                 //reverse: true // only do once
 
             })
-            .setTween('#concepts_typo', { y: "-300%", ease: Linear.easeNone })
+            .setTween('#concepts_typo', { y: "-160%%", ease: Linear.easeNone })
             //.setPin("#parallax_container", { pushFollowers: true })
             //.addIndicators({ name: "concepts_typo" }) // add indicators (requires plugin)
             .addTo(controller);
